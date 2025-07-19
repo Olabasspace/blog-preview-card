@@ -1,48 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Frontend Mentor | Blog preview card</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
-
-  <title>Frontend Mentor | Blog preview card</title>
-</head>
-
-<body>
-
-
-  <div class="container">
-
-    <img class='image' src="./assets/images/illustration-article.svg" alt="card-image">
-
-    <!-- body -->
-    <div class="card--info">
-      <button>Learning</button>
-      <p>Published 21 Dec 2023</p>
-      <div class="card--details">
-        <h3>
-          HTML & CSS foundations
-        </h3>
-        <p class="describtion">
-          These languages are the backbone of every website,
-          defining structure, content, and presentation.
-        </p>
+  <body>
+    <main class="container">
+      <div>
+        <img
+          class="image"
+          src="./assets/images/illustration-article.svg"
+          alt="card-image"
+        />
       </div>
-      <div class="holder--detail">
-        <img src="./assets/images/image-avatar.webp" alt="CArd Holder Detail">
-        <p class="holder--name">
-          Greg Hooper
-        </p>
+
+      <!-- body -->
+      <div class="card--info">
+        <button type="button">Learning</button>
+        <p>Published 21 Dec 2023</p>
+        <div class="card--details">
+          <h1>HTML & CSS foundations</h1>
+          <p class="describtion">
+            These languages are the backbone of every website, defining
+            structure, content, and presentation.
+          </p>
+        </div>
+        <div class="holder--detail">
+          <img
+            src="./assets/images/image-avatar.webp"
+            alt="CArd Holder Detail"
+          />
+          <p class="holder--name">Greg Hooper</p>
+        </div>
       </div>
-    </div>
-  </div>
+    </main>
 
-  <div class="attribution" >
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="tel: 07059027570">Olabasspace</a>.
-  </div>
-</body>
-
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="tel: 07059027570">Olabasspace</a>.
+    </footer>
+  </body>
 </html>

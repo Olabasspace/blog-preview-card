@@ -5,7 +5,7 @@
 }
 
 @font-face {
-    font-family: Figtree;
+    font-family: "Figtree", Arial, Helvetica, sans-serif;
     src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
 }
 
@@ -13,25 +13,27 @@ body{
     background-color: hsl(47, 88%, 63%);
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 1rem;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    font-family: Figtree;
+    font-family:  "Figtree", Arial, Helvetica, sans-serif;
 }
 
 .container{
     height: auto;
-    border: 1px solid hsl(0, 0%, 42%);
+    border: 0.1rem solid hsl(0, 0%, 42%);
     background-color: hsl(0, 0%, 100%);
-    box-shadow: 8px 8px 2px;
+    box-shadow: 0.5rem 0.5rem 0.1rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .image{
     border-radius: 1rem;
-    height: auto;    
+    height: auto;
+    width: 100%;
 }
 
 .card--info{
@@ -40,7 +42,7 @@ body{
     text-align: left;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 0.5rem;
     color: hsl(0, 0%, 7%);
     font-weight: 500;
 }
@@ -50,7 +52,7 @@ body{
     max-width: 50%;
     padding: 0.3rem 0.5rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     font-weight: 800;
 }
 
@@ -58,85 +60,85 @@ body{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 0.5rem;
     color: hsl(0, 0%, 7%);
     font-weight: 800;
 }
 
 .holder--detail img{
-    height: 50px;
-    width: 50px;
+    height: 3.5rem;
+    width: 3.5rem;
 }
 
 
-@media screen and (min-device-width: 320px){
+@media screen and (min-device-width: 20rem){
     .container{
         width: 50vw;
-        padding: 8px;
-        border-radius: 20px;
+        padding: 0.5rem;
+        border-radius: 1rem;
     }
 
     p{
-        font-size: 10px;
+        font-size: 0.6rem;
     }
 
     .card--info{
-        padding-bottom: 0;
+        padding-bottom: left;
     }
 
-    .card--details h3{
+    .card--details h1{
         color: hsl(0, 0%, 7%);
-        font-size: 0.8rem;
+        font-size: 1rem;
         font-weight: 800;
     }
 
     .card--details > p{
         padding: 0.2rem 0;
-        font-size: 8px;
+        font-size: 0.5rem;
     }
 
     .card--info button{
-        font-size: 10px;
+        font-size: 0.6rem;
     }
 
     .holder--detail img{
-        height: 30px;
-        width: 30px;
+        height: 2rem;
+        width: 2rem;
     }
     
     .attribution{
-        font-size: 8px;
+        font-size: 0.5rem;
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 45rem) {
     .container{
         width: 28vw;
         height: auto;
         padding: 1rem;
-        border-radius: 20px;
+        border-radius: 1.2rem;
     }
-    .card--details h3{
+    .card--details h1{
         color: hsl(0, 0%, 7%);
         font-size: 1.5rem;
         font-weight: 800;
     }
 
     .attribution{
-        font-size: 12px;
+        font-size: 0.8rem;
     }
 
     p{
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .card--details > p{
         padding: 1rem 0;
         color: hsl(0, 0%, 42%);
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .card--info button{
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
